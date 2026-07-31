@@ -17,7 +17,7 @@ php artisan db:seed --class=Database\Seeders\PlayerNotesPermissionSeeder
 - Repositorio: `PlayerNoteRepositoryInterface` + `EloquentPlayerNoteRepository`, bind en `RepositoryServiceProvider`.
 - El permiso usado es `player-notes.create` (Spatie Permission). Sin ese permiso, el form de agregar nota no se muestra, y aunque se llame el método directo también lo bloquea la Policy.
 - El componente Livewire quedó como clase separada (`app/Livewire/PlayerNotes.php` + vista), no como single-file component, para que sea más fácil de leer.
-- El componente quedó como clase separada (`app/Livewire/PlayerNotes.php` + vista), en vez del componente nuevo de Livewire 4, por legibilidad y porque es más estándar.
+
 ## Tests
 
 ```
